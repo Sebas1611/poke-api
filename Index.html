@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menús Desplegables e Imágenes con Pokébola</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <svg class="pokeball-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="white" stroke="black" stroke-width="5" />
+                <circle cx="50" cy="50" r="35" fill="red" stroke="black" stroke-width="5" />
+                <rect x="5" y="45" width="90" height="10" fill="black" />
+                <circle cx="50" cy="50" r="15" fill="white" stroke="black" stroke-width="5" />
+                <circle cx="50" cy="50" r="7" fill="black" />
+            </svg>
+            <h1>Selecciona un Pokémon:</h1>
+        </div>
+
+        <div class="menu-container">
+            <div>
+                <label for="pokemon1">Pokémon 1:</label>
+                <select id="pokemon1" onchange="cargarPokemon('pokemon1')">
+                    <option value="">Seleccionar...</option>
+                </select>
+            </div>
+            <div>
+                <label for="pokemon2">Pokémon 2:</label>
+                <select id="pokemon2" onchange="cargarPokemon('pokemon2')">
+                    <option value="">Seleccionar...</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div id="info-pokemon1" class="pokemon-info">
+                <h3>Información del Pokémon 1</h3>
+            </div>
+            <div id="info-pokemon2" class="pokemon-info">
+                <h3>Información del Pokémon 2</h3>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
